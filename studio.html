@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regular Studio — keRObokan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,600;0,800;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="index.html" class="nav-wordmark">
+      <span class="wm-light">ke</span><span class="wm-bold">RO</span><span class="wm-light wm-last">bokan</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MENU OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay">
+    <button class="menu-close" id="menuClose" aria-label="Close menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+        <line x1="1" y1="1" x2="21" y2="21" stroke="#f0ead8" stroke-width="1.5"/>
+        <line x1="21" y1="1" x2="1" y2="21" stroke="#f0ead8" stroke-width="1.5"/>
+      </svg>
+    </button>
+    <nav class="menu-links">
+      <a href="index.html#accommodation" class="menu-link" onclick="closeMenu()">Accommodation</a>
+      <a href="suite.html" class="menu-link" onclick="closeMenu()">Family Suite</a>
+      <a href="index.html#request" class="menu-link" onclick="closeMenu()">Request a Stay</a>
+    </nav>
+  </div>
+
+  <!-- ROOM HERO -->
+  <section class="room-hero" data-nav-theme="light">
+    <div class="room-hero-bg" id="roomHeroBg">
+      <img src="images/room-studio-a.jpeg" alt="Regular Studio" onerror="this.style.display='none'">
+    </div>
+    <div class="room-hero-content">
+      <span class="room-hero-label">REGULAR STUDIO</span>
+      <h1 class="room-hero-name">The Studio</h1>
+    </div>
+    <div class="scroll-hint">
+      <span>SCROLL</span>
+      <svg width="14" height="9" viewBox="0 0 14 9" fill="none">
+        <line x1="1" y1="1" x2="7" y2="8" stroke="#f0ead8" stroke-opacity="0.5" stroke-width="1.2"/>
+        <line x1="13" y1="1" x2="7" y2="8" stroke="#f0ead8" stroke-opacity="0.5" stroke-width="1.2"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ROOM NARRATIVE -->
+  <section class="room-narrative" data-nav-theme="light">
+    <p data-reveal>Built for the solitary traveller. Morning light filters through perforated screens, casting geometry across raw concrete floors. Stillness, by design.</p>
+  </section>
+
+  <!-- ROOM DETAILS -->
+  <section class="room-details-row" data-nav-theme="light">
+    <div class="room-details-specs">
+      <div class="spec-item">
+        <span class="spec-label">TYPE</span>
+        <span class="spec-value">1 Bedroom</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-label">GUESTS</span>
+        <span class="spec-value">Up to 2</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-label">POOL</span>
+        <span class="spec-value">Shared</span>
+      </div>
+    </div>
+    <div class="room-details-price" data-reveal>
+      <span class="details-price-amount">IDR 475,000</span>
+      <span class="details-price-label">/ NIGHT</span>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="room-gallery" data-nav-theme="light">
+    <div class="room-gallery-photo" data-clip-reveal>
+      <img src="images/room-studio-b.jpeg" alt="" onerror="this.style.display='none'">
+    </div>
+    <div class="room-gallery-photo" data-clip-reveal>
+      <img src="images/room-studio-c.jpeg" alt="" onerror="this.style.display='none'">
+    </div>
+  </section>
+
+  <!-- EXTENDED STAY -->
+  <section class="extended-stay" data-nav-theme="light">
+    <span class="section-label" data-reveal>EXTENDED STAYS</span>
+    <p data-reveal>Planning to stay longer? We offer monthly rates and personalised arrangements — just reach out.</p>
+    <a class="extended-stay-link" data-reveal
+       href="https://wa.me/62811210864?text=Hello%20keRObokan%2C%20I%27m%20interested%20in%20an%20extended%20stay%20at%20the%20Regular%20Studio..."
+       target="_blank" rel="noopener">ENQUIRE ABOUT MONTHLY RATES →</a>
+  </section>
+
+  <!-- NEXT ROOM -->
+  <a class="next-room" href="suite.html" data-nav-theme="light">
+    <span class="next-room-label">NEXT</span>
+    <span class="next-room-name">VIEW FAMILY SUITE →</span>
+  </a>
+
+  <!-- CTA FOOTER -->
+  <section class="cta-footer" id="request" data-nav-theme="light">
+    <a class="cta-btn" data-reveal
+       href="https://wa.me/62811210864?text=Hello%20keRObokan%2C%20I%20would%20like%20to%20book%20the%20Regular%20Studio..."
+       target="_blank" rel="noopener">REQUEST A STAY VIA WHATSAPP</a>
+    <span class="cta-location" data-reveal>KEROBOKAN, BALI — INDONESIA</span>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
