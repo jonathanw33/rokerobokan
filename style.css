@@ -40,6 +40,7 @@ img {
   transform: translateY(0);
 }
 .room-card:nth-child(2)[data-reveal] { transition-delay: 0.14s; }
+.cta-email[data-reveal]              { transition-delay: 0.09s; }
 .cta-location[data-reveal]           { transition-delay: 0.18s; }
 
 /* ── ENTRANCE ANIMATION ─────────────────────────────────── */
@@ -450,6 +451,19 @@ img {
 .cta-btn:hover {
   background: var(--beige);
   color: var(--green);
+}
+
+.cta-email {
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(240,234,216,0.55);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.cta-email:hover {
+  color: var(--beige);
 }
 
 .cta-location {
