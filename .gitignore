@@ -6,3 +6,7 @@
 !.dev.vars.example
 .env*
 !.env.example
+
+# The admin app lives in its own private repo (jonathanw33/rokerobokan-admin),
+# checked out here as a nested repository. Never publish it via the website.
+/app/

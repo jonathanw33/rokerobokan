@@ -1,0 +1,7 @@
+# Never serve these from rokerobokan.com, even on a local `wrangler deploy`.
+# app/ holds the private admin app (with its SQLite database and .env).
+app
+.git
+.wrangler
+.env*
+.dev.vars*
